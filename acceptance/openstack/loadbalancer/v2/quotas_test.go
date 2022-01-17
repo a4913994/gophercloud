@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/loadbalancer/v2/quotas"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/loadbalancer/v2/quotas"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestQuotasGet(t *testing.T) {

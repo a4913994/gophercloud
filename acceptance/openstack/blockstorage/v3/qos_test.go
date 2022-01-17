@@ -3,11 +3,11 @@ package v3
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/blockstorage/v3/qos"
-	"github.com/gophercloud/gophercloud/pagination"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/blockstorage/v3/qos"
+	"github.com/lxdcc/gophercloud/pagination"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestQoS(t *testing.T) {

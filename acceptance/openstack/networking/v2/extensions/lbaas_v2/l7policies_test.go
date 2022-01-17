@@ -6,9 +6,9 @@ package lbaas_v2
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/lbaas_v2/l7policies"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/lbaas_v2/l7policies"
 )
 
 func TestL7PoliciesList(t *testing.T) {

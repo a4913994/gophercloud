@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gophercloud/gophercloud/openstack/loadbalancer/v2/providers"
-	th "github.com/gophercloud/gophercloud/testhelper"
-	"github.com/gophercloud/gophercloud/testhelper/client"
+	"github.com/lxdcc/gophercloud/openstack/loadbalancer/v2/providers"
+	th "github.com/lxdcc/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/testhelper/client"
 )
 
 // ProvidersListBody contains the canned body of a provider list response.

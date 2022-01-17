@@ -1,8 +1,8 @@
 package volumetransfers
 
 import (
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/pagination"
 )
 
 // CreateOpts contains options for a Volume transfer.

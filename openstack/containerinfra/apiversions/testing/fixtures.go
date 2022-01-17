@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gophercloud/gophercloud/openstack/containerinfra/apiversions"
-	th "github.com/gophercloud/gophercloud/testhelper"
-	"github.com/gophercloud/gophercloud/testhelper/client"
+	"github.com/lxdcc/gophercloud/openstack/containerinfra/apiversions"
+	th "github.com/lxdcc/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/testhelper/client"
 )
 
 const MagnumAPIVersionResponse = `

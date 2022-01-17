@@ -3,10 +3,10 @@ package testing
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/hypervisors"
-	"github.com/gophercloud/gophercloud/pagination"
-	"github.com/gophercloud/gophercloud/testhelper"
-	"github.com/gophercloud/gophercloud/testhelper/client"
+	"github.com/lxdcc/gophercloud/openstack/compute/v2/extensions/hypervisors"
+	"github.com/lxdcc/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/testhelper/client"
 )
 
 func TestListHypervisorsPre253(t *testing.T) {

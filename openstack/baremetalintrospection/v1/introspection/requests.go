@@ -1,8 +1,8 @@
 package introspection
 
 import (
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/pagination"
 )
 
 // ListIntrospectionsOptsBuilder allows extensions to add additional parameters to the

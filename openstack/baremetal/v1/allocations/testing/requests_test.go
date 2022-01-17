@@ -3,10 +3,10 @@ package testing
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/openstack/baremetal/v1/allocations"
-	"github.com/gophercloud/gophercloud/pagination"
-	th "github.com/gophercloud/gophercloud/testhelper"
-	"github.com/gophercloud/gophercloud/testhelper/client"
+	"github.com/lxdcc/gophercloud/openstack/baremetal/v1/allocations"
+	"github.com/lxdcc/gophercloud/pagination"
+	th "github.com/lxdcc/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/testhelper/client"
 )
 
 func TestListAllocations(t *testing.T) {

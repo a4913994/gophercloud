@@ -6,11 +6,11 @@ package v2
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	identity "github.com/gophercloud/gophercloud/acceptance/openstack/identity/v3"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/flavors"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	identity "github.com/lxdcc/gophercloud/acceptance/openstack/identity/v3"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/compute/v2/flavors"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestFlavorsList(t *testing.T) {

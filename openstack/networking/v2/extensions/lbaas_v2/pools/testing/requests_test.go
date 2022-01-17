@@ -3,10 +3,10 @@ package testing
 import (
 	"testing"
 
-	fake "github.com/gophercloud/gophercloud/openstack/networking/v2/common"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/lbaas_v2/pools"
-	"github.com/gophercloud/gophercloud/pagination"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	fake "github.com/lxdcc/gophercloud/openstack/networking/v2/common"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/lbaas_v2/pools"
+	"github.com/lxdcc/gophercloud/pagination"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestListPools(t *testing.T) {

@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/pagination"
 )
 
 // SingleTenantOpts are options for fetching usage of a single tenant.

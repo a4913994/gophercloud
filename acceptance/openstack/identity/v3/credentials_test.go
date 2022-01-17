@@ -6,13 +6,13 @@ package v3
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack"
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/credentials"
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/extensions/ec2tokens"
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/tokens"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack"
+	"github.com/lxdcc/gophercloud/openstack/identity/v3/credentials"
+	"github.com/lxdcc/gophercloud/openstack/identity/v3/extensions/ec2tokens"
+	"github.com/lxdcc/gophercloud/openstack/identity/v3/tokens"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestCredentialsCRUD(t *testing.T) {

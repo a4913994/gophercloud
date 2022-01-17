@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	fake "github.com/gophercloud/gophercloud/openstack/networking/v2/common"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/security/groups"
-	"github.com/gophercloud/gophercloud/pagination"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	fake "github.com/lxdcc/gophercloud/openstack/networking/v2/common"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/security/groups"
+	"github.com/lxdcc/gophercloud/pagination"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestList(t *testing.T) {

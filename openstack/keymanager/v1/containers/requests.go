@@ -1,8 +1,8 @@
 package containers
 
 import (
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/pagination"
 )
 
 // ContainerType represents the valid types of containers.

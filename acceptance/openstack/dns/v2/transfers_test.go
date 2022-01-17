@@ -6,12 +6,12 @@ package v2
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	identity "github.com/gophercloud/gophercloud/acceptance/openstack/identity/v3"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	transferAccepts "github.com/gophercloud/gophercloud/openstack/dns/v2/transfer/accept"
-	transferRequests "github.com/gophercloud/gophercloud/openstack/dns/v2/transfer/request"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	identity "github.com/lxdcc/gophercloud/acceptance/openstack/identity/v3"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	transferAccepts "github.com/lxdcc/gophercloud/openstack/dns/v2/transfer/accept"
+	transferRequests "github.com/lxdcc/gophercloud/openstack/dns/v2/transfer/request"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestTransferRequestCRUD(t *testing.T) {

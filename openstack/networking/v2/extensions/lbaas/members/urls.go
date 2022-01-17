@@ -1,6 +1,6 @@
 package members
 
-import "github.com/gophercloud/gophercloud"
+import "github.com/lxdcc/gophercloud"
 
 const (
 	rootPath     = "lb"

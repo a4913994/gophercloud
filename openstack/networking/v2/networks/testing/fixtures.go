@@ -3,7 +3,7 @@ package testing
 import (
 	"time"
 
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/networks"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/networks"
 )
 
 const ListResponse = `

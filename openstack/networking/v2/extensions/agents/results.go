@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/bgp/speakers"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/networks"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/bgp/speakers"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/networks"
+	"github.com/lxdcc/gophercloud/pagination"
 )
 
 type commonResult struct {

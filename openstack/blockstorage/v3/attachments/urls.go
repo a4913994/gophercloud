@@ -1,6 +1,6 @@
 package attachments
 
-import "github.com/gophercloud/gophercloud"
+import "github.com/lxdcc/gophercloud"
 
 func createURL(c *gophercloud.ServiceClient) string {
 	return c.ServiceURL("attachments")

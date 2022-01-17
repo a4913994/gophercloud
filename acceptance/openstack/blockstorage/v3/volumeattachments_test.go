@@ -6,10 +6,10 @@ package v3
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	compute "github.com/gophercloud/gophercloud/acceptance/openstack/compute/v2"
-	"github.com/gophercloud/gophercloud/openstack/blockstorage/v3/volumes"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	compute "github.com/lxdcc/gophercloud/acceptance/openstack/compute/v2"
+	"github.com/lxdcc/gophercloud/openstack/blockstorage/v3/volumes"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestVolumeAttachments(t *testing.T) {

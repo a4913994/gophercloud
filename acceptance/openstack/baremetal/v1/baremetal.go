@@ -3,11 +3,11 @@ package v1
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/baremetal/v1/allocations"
-	"github.com/gophercloud/gophercloud/openstack/baremetal/v1/nodes"
-	"github.com/gophercloud/gophercloud/openstack/baremetal/v1/ports"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/baremetal/v1/allocations"
+	"github.com/lxdcc/gophercloud/openstack/baremetal/v1/nodes"
+	"github.com/lxdcc/gophercloud/openstack/baremetal/v1/ports"
 )
 
 // CreateNode creates a basic node with a randomly generated name.

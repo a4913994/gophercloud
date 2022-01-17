@@ -6,11 +6,11 @@ package v1
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/openstack/baremetal/v1/ports"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/openstack/baremetal/v1/ports"
+	"github.com/lxdcc/gophercloud/pagination"
 
-	th "github.com/gophercloud/gophercloud/testhelper"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestPortsCreateDestroy(t *testing.T) {

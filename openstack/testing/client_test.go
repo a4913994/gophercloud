@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/openstack"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 const ID = "0123456789"

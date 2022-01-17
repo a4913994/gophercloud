@@ -6,11 +6,11 @@ package noauth
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/blockstorage/v3/snapshots"
-	"github.com/gophercloud/gophercloud/openstack/blockstorage/v3/volumes"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/blockstorage/v3/snapshots"
+	"github.com/lxdcc/gophercloud/openstack/blockstorage/v3/volumes"
 )
 
 // CreateVolume will create a volume with a random name and size of 1GB. An

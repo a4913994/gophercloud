@@ -3,12 +3,12 @@ package noauth
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	v1 "github.com/gophercloud/gophercloud/acceptance/openstack/baremetal/v1"
-	"github.com/gophercloud/gophercloud/openstack/baremetal/v1/nodes"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	v1 "github.com/lxdcc/gophercloud/acceptance/openstack/baremetal/v1"
+	"github.com/lxdcc/gophercloud/openstack/baremetal/v1/nodes"
+	"github.com/lxdcc/gophercloud/pagination"
 
-	th "github.com/gophercloud/gophercloud/testhelper"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestNodesCreateDestroy(t *testing.T) {

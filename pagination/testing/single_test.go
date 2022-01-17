@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gophercloud/gophercloud/pagination"
-	"github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud/testhelper"
 )
 
 // SinglePage sample and test cases.

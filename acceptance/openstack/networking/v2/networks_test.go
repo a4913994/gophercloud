@@ -6,12 +6,12 @@ package v2
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/external"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/portsecurity"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/networks"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/external"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/portsecurity"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/networks"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestNetworksExternalList(t *testing.T) {

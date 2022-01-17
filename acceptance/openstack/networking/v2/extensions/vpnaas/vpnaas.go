@@ -3,14 +3,14 @@ package vpnaas
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/vpnaas/endpointgroups"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/vpnaas/ikepolicies"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/vpnaas/ipsecpolicies"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/vpnaas/services"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/vpnaas/siteconnections"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/vpnaas/endpointgroups"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/vpnaas/ikepolicies"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/vpnaas/ipsecpolicies"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/vpnaas/services"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/vpnaas/siteconnections"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 // CreateService will create a Service with a random name and a specified router ID

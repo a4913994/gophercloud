@@ -3,9 +3,9 @@ package messages
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/sharedfilesystems/v2/messages"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/sharedfilesystems/v2/messages"
 )
 
 const requestID = "req-6f52cd8b-25a1-42cf-b497-7babf70f55f4"

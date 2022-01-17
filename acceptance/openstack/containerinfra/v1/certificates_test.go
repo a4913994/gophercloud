@@ -6,9 +6,9 @@ package v1
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/openstack/containerinfra/v1/certificates"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/openstack/containerinfra/v1/certificates"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestCertificatesCRUD(t *testing.T) {

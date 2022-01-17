@@ -5,12 +5,12 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/fwaas_v2/groups"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/fwaas_v2/policies"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/fwaas_v2/rules"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/fwaas_v2/groups"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/fwaas_v2/policies"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/fwaas_v2/rules"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 // RemoveRule will remove a rule from the  policy.

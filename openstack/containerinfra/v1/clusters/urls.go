@@ -1,7 +1,7 @@
 package clusters
 
 import (
-	"github.com/gophercloud/gophercloud"
+	"github.com/lxdcc/gophercloud"
 )
 
 var apiName = "clusters"

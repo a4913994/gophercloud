@@ -1,6 +1,6 @@
 package volumetransfers
 
-import "github.com/gophercloud/gophercloud"
+import "github.com/lxdcc/gophercloud"
 
 func transferURL(c *gophercloud.ServiceClient) string {
 	return c.ServiceURL("os-volume-transfer")

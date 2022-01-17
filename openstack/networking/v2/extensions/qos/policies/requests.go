@@ -1,10 +1,10 @@
 package policies
 
 import (
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/networks"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/ports"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/networks"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/ports"
+	"github.com/lxdcc/gophercloud/pagination"
 )
 
 // PortCreateOptsExt adds QoS options to the base ports.CreateOpts.

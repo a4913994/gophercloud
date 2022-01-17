@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	fake "github.com/gophercloud/gophercloud/openstack/networking/v2/common"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/qos/policies"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/networks"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/ports"
-	"github.com/gophercloud/gophercloud/pagination"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	fake "github.com/lxdcc/gophercloud/openstack/networking/v2/common"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/extensions/qos/policies"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/networks"
+	"github.com/lxdcc/gophercloud/openstack/networking/v2/ports"
+	"github.com/lxdcc/gophercloud/pagination"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestGetPort(t *testing.T) {

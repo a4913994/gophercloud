@@ -1,6 +1,6 @@
 package tags
 
-import "github.com/gophercloud/gophercloud"
+import "github.com/lxdcc/gophercloud"
 
 // List all tags on a server.
 func List(client *gophercloud.ServiceClient, serverID string) (r ListResult) {

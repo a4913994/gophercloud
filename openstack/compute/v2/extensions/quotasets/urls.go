@@ -1,6 +1,6 @@
 package quotasets
 
-import "github.com/gophercloud/gophercloud"
+import "github.com/lxdcc/gophercloud"
 
 const resourcePath = "os-quota-sets"
 

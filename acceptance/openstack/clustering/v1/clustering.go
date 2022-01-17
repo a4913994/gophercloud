@@ -6,16 +6,16 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/acceptance/tools"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/actions"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/clusters"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/nodes"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/policies"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/profiles"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/receivers"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/acceptance/tools"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/actions"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/clusters"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/nodes"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/policies"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/profiles"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/receivers"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 var TestPolicySpec = policies.Spec{

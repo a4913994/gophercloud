@@ -6,10 +6,10 @@ package v1
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/acceptance/clients"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/nodes"
-	"github.com/gophercloud/gophercloud/openstack/clustering/v1/webhooks"
-	th "github.com/gophercloud/gophercloud/testhelper"
+	"github.com/lxdcc/gophercloud/acceptance/clients"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/nodes"
+	"github.com/lxdcc/gophercloud/openstack/clustering/v1/webhooks"
+	th "github.com/lxdcc/gophercloud/testhelper"
 )
 
 func TestClusteringWebhookTrigger(t *testing.T) {
