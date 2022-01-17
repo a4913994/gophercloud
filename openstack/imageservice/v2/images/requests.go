@@ -156,7 +156,7 @@ type CreateOpts struct {
 	ID string `json:"id,omitempty"`
 
 	// Visibility defines who can see/use the image.
-	Visibility *ImageVisibility `json:"visibility,omitempty"`
+	Visibility ImageVisibility `json:"visibility,omitempty"`
 
 	// Hidden is whether the image is listed in default image list or not.
 	Hidden *bool `json:"os_hidden,omitempty"`
