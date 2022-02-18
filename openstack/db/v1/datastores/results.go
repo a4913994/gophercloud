@@ -5,6 +5,10 @@ import (
 	"github.com/lxdcc/gophercloud/pagination"
 )
 
+type commonResult struct {
+	gophercloud.Result
+}
+
 // Version represents a version API resource. Multiple versions belong to a Datastore.
 type Version struct {
 	ID    string
@@ -97,4 +101,16 @@ func (r GetVersionResult) Extract() (*Version, error) {
 	}
 	err := r.ExtractInto(&s)
 	return s.Version, err
+}
+
+// CreateResult represents the result of a create operation. Call its Extract
+// method to interpret it as a Subnet.
+type CreateResult struct {
+	commonResult
+}
+
+// DeleteResult represents the result of a delete operation. Call its
+// ExtractErr method to determine if the request succeeded or failed.
+type DeleteResult struct {
+	gophercloud.ErrResult
 }
