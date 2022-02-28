@@ -80,3 +80,10 @@ func Update(client *gophercloud.ServiceClient, id string, opts UpdateOpts) (r Up
 	_, r.Header, r.Err = gophercloud.ParseResponse(resp, err)
 	return
 }
+
+// Delete nova-compute service
+func Delete(client *gophercloud.ServiceClient, id string) (r DeleteResult) {
+	resp, err := client.Delete(deleteURL(client, id), nil)
+	_, r.Header, r.Err = gophercloud.ParseResponse(resp, err)
+	return
+}
