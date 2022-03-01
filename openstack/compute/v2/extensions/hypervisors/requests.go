@@ -64,9 +64,41 @@ func GetStatistics(client *gophercloud.ServiceClient) (r StatisticsResult) {
 	return
 }
 
+// GetOpts allows the filtering and sorting of paginated collections through
+// the API. Filtering is achieved by passing in struct field values that map to
+// the server attributes you want to see returned. Marker and Limit are used
+// for pagination.
+type GetOpts struct {
+	// WithServers is a bool to include all servers which belong to each hypervisor
+	// This requires microversion 2.53 or later
+	WithServers *bool `q:"with_servers"`
+}
+
+// GetOptsBuilder allows extensions to add additional parameters to the
+// Get request.
+type GetOptsBuilder interface {
+	ToHypervisorGetQuery() (string, error)
+}
+
+// ToHypervisorGetQuery formats a ListOpts into a query string.
+func (opts GetOpts) ToHypervisorGetQuery() (string, error) {
+	q, err := gophercloud.BuildQueryString(opts)
+	return q.String(), err
+}
+
 // Get makes a request against the API to get details for specific hypervisor.
-func Get(client *gophercloud.ServiceClient, hypervisorID string) (r HypervisorResult) {
-	resp, err := client.Get(hypervisorsGetURL(client, hypervisorID), &r.Body, &gophercloud.RequestOpts{
+func Get(client *gophercloud.ServiceClient, hypervisorID string, opts GetOptsBuilder) (r HypervisorResult) {
+	url := hypervisorsGetURL(client, hypervisorID)
+	if opts != nil {
+		query, err := opts.ToHypervisorGetQuery()
+		if err != nil {
+			r.Err = err
+			return
+		}
+		url += query
+	}
+
+	resp, err := client.Get(url, &r.Body, &gophercloud.RequestOpts{
 		OkCodes: []int{200},
 	})
 	_, r.Header, r.Err = gophercloud.ParseResponse(resp, err)
