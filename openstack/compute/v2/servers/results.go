@@ -181,7 +181,7 @@ type Server struct {
 
 	// Image refers to a JSON object, which itself indicates the OS image used to
 	// deploy the server.
-	Image map[string]interface{} `json:"-"`
+	Image map[string]interface{} `json:"image"`
 
 	// Flavor refers to a JSON object, which itself indicates the hardware
 	// configuration of the deployed server.
