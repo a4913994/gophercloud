@@ -143,6 +143,22 @@ func (r CreateImageResult) ExtractImageID() (string, error) {
 	return imageID, nil
 }
 
+type ServerDetail struct {
+	*Server
+	Host               string `json:"OS-EXT-SRV-ATTR:host"`
+	Hostname           string `json:"OS-EXT-SRV-ATTR:hostname"`
+	HypervisorHostname string `json:"OS-EXT-SRV-ATTR:hypervisor_hostname"`
+	InstanceName       string `json:"OS-EXT-SRV-ATTR:instance_name"`
+	RootDeviceName     string `json:"OS-EXT-SRV-ATTR:root_device_name"`
+	UserData           string `json:"OS-EXT-SRV-ATTR:user_data"`
+	PowerState         int    `json:"OS-EXT-STS:power_state"`
+	TaskState          string `json:"OS-EXT-STS:task_state"`
+	VMPowerState       string `json:"OS-EXT-STS:vm_state"`
+	LaunchedAt         string `json:"OS-SRV-USG:launched_at"`
+	TerminatedAt       string `json:"OS-SRV-USG:terminated_at"`
+	HostStatus         string `json:"host_status"`
+}
+
 // Server represents a server/instance in the OpenStack cloud.
 type Server struct {
 	// ID uniquely identifies this server amongst all other servers,
