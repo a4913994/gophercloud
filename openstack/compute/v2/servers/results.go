@@ -144,7 +144,11 @@ func (r CreateImageResult) ExtractImageID() (string, error) {
 }
 
 type ServerDetail struct {
-	*Server
+	Server
+	serverExtraInfo
+}
+
+type serverExtraInfo struct {
 	Host               string `json:"OS-EXT-SRV-ATTR:host"`
 	Hostname           string `json:"OS-EXT-SRV-ATTR:hostname"`
 	HypervisorHostname string `json:"OS-EXT-SRV-ATTR:hypervisor_hostname"`
