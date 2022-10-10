@@ -20,7 +20,7 @@ type MigrateOpts struct {
 }
 
 // ToMigrateMap constructs a request body from MigrateOpts.
-func (opts LiveMigrateOpts) ToMigrateMap() (map[string]interface{}, error) {
+func (opts MigrateOpts) ToMigrateMap() (map[string]interface{}, error) {
 	return gophercloud.BuildRequestBody(opts, "migrate")
 }
 
