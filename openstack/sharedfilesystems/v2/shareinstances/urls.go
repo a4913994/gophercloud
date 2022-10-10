@@ -9,3 +9,7 @@ func listInstancesURL(c *gophercloud.ServiceClient) string {
 func getInstancesURL(c *gophercloud.ServiceClient, id string) string {
 	return c.ServiceURL("share_instances", id)
 }
+
+func getServerDetailURL(c *gophercloud.ServiceClient, id string) string {
+	return c.ServiceURL("share-servers", id, "details")
+}

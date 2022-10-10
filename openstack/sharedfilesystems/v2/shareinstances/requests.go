@@ -42,3 +42,8 @@ func Get(client *gophercloud.ServiceClient, id string) (r GetResult) {
 	_, r.Err = client.Get(getInstancesURL(client, id), &r.Body, nil)
 	return
 }
+
+func GetServerDetail(client *gophercloud.ServiceClient, id string) (r GetResult) {
+	_, r.Err = client.Get(getServerDetailURL(client, id), &r.Body, nil)
+	return
+}
