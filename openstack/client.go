@@ -501,3 +501,8 @@ func NewWorkflowV2(client *gophercloud.ProviderClient, eo gophercloud.EndpointOp
 func NewPlacementV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
 	return initClientOpts(client, eo, "placement")
 }
+
+// NewMasakariV1 creates a ServiceClient that may be used with the v1 masakari package.
+func NewMasakariV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
+	return initClientOpts(client, eo, "instance-ha")
+}
