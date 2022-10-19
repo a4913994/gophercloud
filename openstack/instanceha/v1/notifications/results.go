@@ -7,7 +7,7 @@ import (
 
 type Notification struct {
 	// ID ID of notification.
-	ID string `json:"id"`
+	ID int `json:"id"`
 
 	// NotificationUUID The UUID of the notification.
 	NotificationUUID string `json:"notification_uuid"`

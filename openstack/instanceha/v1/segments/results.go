@@ -8,7 +8,7 @@ import (
 type FailoverSegment struct {
 
 	// ID The Id of the segment.
-	ID string `json:"id"`
+	ID int `json:"id"`
 
 	// Name The segment name.
 	Name string `json:"name"`

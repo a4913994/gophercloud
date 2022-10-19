@@ -43,7 +43,7 @@ type Host struct {
 	Type string `json:"type"`
 
 	// ID ID of host.
-	ID string `json:"id"`
+	ID int `json:"id"`
 }
 
 // HostsPage is a single page of container results.
