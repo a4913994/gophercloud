@@ -76,9 +76,11 @@ type commonResult struct {
 
 // Extract interprets any commonResult as a Segment.
 func (r commonResult) Extract() (*FailoverSegment, error) {
-	var s *FailoverSegment
+	var s struct {
+		Segment *FailoverSegment `json:"segment"`
+	}
 	err := r.ExtractInto(&s)
-	return s, err
+	return s.Segment, err
 }
 
 // GetResult is the response from a Get operation. Call its Extract method

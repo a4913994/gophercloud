@@ -85,9 +85,11 @@ type commonResult struct {
 
 // Extract interprets any commonResult as a Host.
 func (r commonResult) Extract() (*Host, error) {
-	var s *Host
+	var s struct {
+		Host *Host `json:"host"`
+	}
 	err := r.ExtractInto(&s)
-	return s, err
+	return s.Host, err
 }
 
 // GetResult is the response from a Get operation. Call its Extract method
