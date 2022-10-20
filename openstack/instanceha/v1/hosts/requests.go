@@ -131,6 +131,9 @@ type UpdateOpts struct {
 	// Name The host name.
 	Name string `json:"name" required:"true"`
 
+	// ControlAttributes Attributes to control host.
+	ControlAttributes string `json:"control_attributes" required:"true"`
+
 	// Reserved A boolean indicates whether this host is reserved or not, if it is not reserved, false will appear.
 	Reserved bool `json:"reserved,omitempty"`
 

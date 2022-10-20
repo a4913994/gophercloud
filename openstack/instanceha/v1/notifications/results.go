@@ -37,7 +37,7 @@ type Notification struct {
 	Type string `json:"type"`
 
 	// Payload Payload of notification.
-	Payload string `json:"payload"`
+	Payload interface{} `json:"payload"`
 }
 
 // NotificationPage is a single page of notification results.
