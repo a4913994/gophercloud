@@ -3,6 +3,7 @@ package migrate
 import (
 	"github.com/lxdcc/gophercloud"
 	"github.com/lxdcc/gophercloud/openstack/compute/v2/extensions"
+	"github.com/lxdcc/gophercloud/pagination"
 )
 
 // MigrateOptsBuilder allows extensions to add additional parameters to the
@@ -74,4 +75,11 @@ func LiveMigrate(client *gophercloud.ServiceClient, id string, opts LiveMigrateO
 	resp, err := client.Post(extensions.ActionURL(client, id), b, nil, nil)
 	_, r.Header, r.Err = gophercloud.ParseResponse(resp, err)
 	return
+}
+
+// List returns a Pager that allows you to iterate over a collection of Migrations.
+func List(client *gophercloud.ServiceClient) pagination.Pager {
+	return pagination.NewPager(client, extensions.ListMigrations(client), func(r pagination.PageResult) pagination.Page {
+		return NetworkPage{pagination.SinglePageBase(r)}
+	})
 }
