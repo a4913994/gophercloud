@@ -77,10 +77,7 @@ type CreateOptsBuilder interface {
 
 // CreateOpts provides options used to add a host to segment.
 type CreateOpts struct {
-	// Host A host object.
-	Host Host `json:"host" required:"true"`
-
-	// Type Type of host.
+	// Type of host.
 	Type string `json:"type" required:"true"`
 
 	// Name The host name.

@@ -6,7 +6,7 @@ import (
 )
 
 type Notification struct {
-	// ID ID of notification.
+	// ID of notification.
 	ID int `json:"id"`
 
 	// NotificationUUID The UUID of the notification.
@@ -21,7 +21,7 @@ type Notification struct {
 	// Delete A boolean indicates whether this resource is deleted or not, if it has not been deleted, false will appear.
 	Delete bool `json:"delete"`
 
-	// Status Status of notification.
+	// Status of notification.
 	Status string `json:"status"`
 
 	// UUID The UUID of the notification.
@@ -33,10 +33,10 @@ type Notification struct {
 	// GeneratedTime The date and time stamp when the notification was created.
 	GeneratedTime string `json:"generated_time"`
 
-	// Type Type of notification. can be either PROCESS, COMPUTE_HOST or VM.
+	// Type of notification. can be either PROCESS, COMPUTE_HOST or VM.
 	Type string `json:"type"`
 
-	// Payload Payload of notification.
+	// Payload of notification.
 	Payload interface{} `json:"payload"`
 }
 

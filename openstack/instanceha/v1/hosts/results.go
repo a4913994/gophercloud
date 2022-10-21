@@ -39,10 +39,10 @@ type Host struct {
 	// FailoverSegment A segment object.
 	FailoverSegment segments.FailoverSegment `json:"failover_segment"`
 
-	// Type Type of host.
+	// Type of host.
 	Type string `json:"type"`
 
-	// ID ID of host.
+	// ID of host.
 	ID int `json:"id"`
 }
 
