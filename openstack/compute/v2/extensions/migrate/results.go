@@ -11,15 +11,28 @@ type MigrateResult struct {
 	gophercloud.ErrResult
 }
 
-// NetworkPage stores a single page of all Network results from a List call.
-type NetworkPage struct {
-	pagination.SinglePageBase
+// MigrationsPage stores a single page of all Network results from a List call.
+type MigrationsPage struct {
+	pagination.LinkedPageBase
 }
 
 // IsEmpty determines whether or not a NetworkPage is empty.
-func (page NetworkPage) IsEmpty() (bool, error) {
+func (page MigrationsPage) IsEmpty() (bool, error) {
 	va, err := ExtractMigration(page)
 	return len(va) == 0, err
+}
+
+// NextPageURL extracts the "next" link from the links section of the result.
+func (page MigrationsPage) NextPageURL() (string, error) {
+	var s struct {
+		Next     string `json:"next"`
+		Previous string `json:"previous"`
+	}
+	err := page.ExtractInto(&s)
+	if err != nil {
+		return "", err
+	}
+	return s.Next, err
 }
 
 type Migration struct {
@@ -82,6 +95,6 @@ func ExtractMigration(r pagination.Page) ([]Migration, error) {
 	var s struct {
 		Migrations []Migration `json:"migrations"`
 	}
-	err := (r.(NetworkPage)).ExtractInto(&s)
+	err := (r.(MigrationsPage)).ExtractInto(&s)
 	return s.Migrations, err
 }
