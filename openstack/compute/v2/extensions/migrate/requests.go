@@ -140,3 +140,10 @@ func List(client *gophercloud.ServiceClient, opts ListOptsBuilder) pagination.Pa
 		return MigrationsPage{pagination.LinkedPageBase{PageResult: r}}
 	})
 }
+
+// Delete deletes a migration action.
+func Delete(client *gophercloud.ServiceClient, serverID, migrationID string) (r DeleteResult) {
+	resp, err := client.Delete(extensions.DeleteMigration(client, serverID, migrationID), nil)
+	_, r.Header, r.Err = gophercloud.ParseResponse(resp, err)
+	return
+}

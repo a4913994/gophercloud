@@ -98,3 +98,9 @@ func ExtractMigration(r pagination.Page) ([]Migration, error) {
 	err := (r.(MigrationsPage)).ExtractInto(&s)
 	return s.Migrations, err
 }
+
+// DeleteResult is the response from a Delete operation. Call its ExtractErr to
+// determine if the request succeeded or failed.
+type DeleteResult struct {
+	gophercloud.ErrResult
+}
