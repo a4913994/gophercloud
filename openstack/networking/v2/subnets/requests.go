@@ -123,6 +123,9 @@ type CreateOpts struct {
 	// HostRoutes are any static host routes to be set via DHCP.
 	HostRoutes []HostRoute `json:"host_routes,omitempty"`
 
+	// ServiceTypes The service types associated with the subnet.
+	ServiceTypes []string `json:"service_types,omitempty"`
+
 	// The IPv6 address modes specifies mechanisms for assigning IPv6 IP addresses.
 	IPv6AddressMode string `json:"ipv6_address_mode,omitempty"`
 
@@ -197,6 +200,9 @@ type UpdateOpts struct {
 
 	// EnableDHCP will either enable to disable the DHCP service.
 	EnableDHCP *bool `json:"enable_dhcp,omitempty"`
+
+	// ServiceTypes The service types associated with the subnet.
+	ServiceTypes []string `json:"service_types,omitempty"`
 }
 
 // ToSubnetUpdateMap builds a request body from UpdateOpts.

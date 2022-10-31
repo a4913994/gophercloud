@@ -112,6 +112,9 @@ type Subnet struct {
 
 	// Tags optionally set via extensions/attributestags
 	Tags []string `json:"tags"`
+
+	// ServiceTypes The service types associated with the subnet.
+	ServiceTypes []string `json:"service_types,omitempty"`
 }
 
 // SubnetPage is the page returned by a pager when traversing over a collection
