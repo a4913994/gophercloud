@@ -172,7 +172,8 @@ func (r *Hypervisor) UnmarshalJSON(b []byte) error {
 			return err
 		}
 	default:
-		return fmt.Errorf("CPUInfo has unexpected type: %T", t)
+		tmpb = []byte("")
+		//return fmt.Errorf("CPUInfo has unexpected type: %T", t)
 	}
 
 	if len(tmpb) != 0 {
