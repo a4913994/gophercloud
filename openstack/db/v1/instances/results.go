@@ -101,6 +101,9 @@ type Instance struct {
 	// The build status of the instance.
 	Status string
 
+	// The serverID of the instance.
+	ServerID string `json:"server_id"`
+
 	// Fault information (only available when the instance has errored)
 	Fault *Fault
 
